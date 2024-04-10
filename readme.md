@@ -14,7 +14,7 @@ ES6:
 - It is also known as ES2015.
 - This version is very popular because of introducing new features like arrow functions, classes, template strings, let, const, and many more.
 
-[] Scoping - var vs let vs const  
+[x] Scoping - var vs let vs const  
 [] arrow functions  
 [] use of this keyword(lexical scoping)  
 [] template literals  
