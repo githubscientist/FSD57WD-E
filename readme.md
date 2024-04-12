@@ -25,7 +25,18 @@ ES6:
 - Template literals are string literals allowing embedded expressions.
 - You can use multi-line strings and string interpolation features with them.
 
-[] spread & rest prarameter
+[x] spread & rest prarameter
+
+spread operator:
+
+- ... is a spread operator.
+- It allows an iterable to expand in places where 0+ arguments are expected.
+
+rest parameter:
+
+- ... is a rest parameter.
+- It allows us to represent an indefinite number of arguments as an array.
+
 [] array & object destructure
 [] property shorthand
 [] Class in Javascript
