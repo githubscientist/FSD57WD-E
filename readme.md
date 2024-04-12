@@ -37,7 +37,10 @@ rest parameter:
 - ... is a rest parameter.
 - It allows us to represent an indefinite number of arguments as an array.
 
-[] array & object destructure
+[x] array & object destructure
+
+- Destructuring is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
+
 [] property shorthand
 [] Class in Javascript
 [] use of this keyword(lexical scoping)
