@@ -15,7 +15,7 @@ ES6:
 - This version is very popular because of introducing new features like arrow functions, classes, template strings, let, const, and many more.
 
 [x] Scoping - var vs let vs const  
-[] arrow functions  
+[x] arrow functions  
 [] use of this keyword(lexical scoping)  
 [] template literals  
 [] spread & rest prarameter  

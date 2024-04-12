@@ -1,125 +1,80 @@
-// Scoping - var vs let vs const
+// functions: block of code that gets executed when called
+// function types: library functions and user defined functions
 
-// reference -> as a variable or as a constant
-// we can create a variable using either var or let keyword
-// var age = 25;
-
-// // variable are changeables
-// age = 30;
-
-// console.log(age);
-
-// using let -> we can create a variable which are changeables. i., we can change the value
-// let age = 25;
-
-// // variable are changeables
-// age = 30;
-
-// console.log(age);
-
-// const -> create constants whose values aren't changed once defined
-// const age = 25;
-
-// // variable are changeables
-// age = 30; // can't change the value of a constant once defined
-
-// console.log(age);
-
-// differences between var vs let
-
-/*
-    var -> function-scoped. introduced in ES5 - redefinitions are allowed
-    let -> block-scoped. introduced in ES6  - redefinitions are allowed
-    const -> block-scoped. introduced in ES6 - redefinitions are not allowed
-*/
-
-// 1. Redeclarations and Redefinitions
-
-// var age = 25; // declare and define a variable
-
-// var age = 'twenty five'; // redeclaration and redefinition
-
-// console.log(age);
-
-// var age = 25; // declare and define a variable
-
-// let age = 'twenty five'; // redeclaration is not allowed
-
-// console.log(age);
-
-// 2. Scoping: Scoping is the way to define the visibility of variables in different parts of the code
-
-// global scope: visible everywhere in the file
-// var x = 10; // global scope: visible everywhere in the file
-
-// // a block of code
-// {   
-//     console.log(x); // 10
-// }
-
-// // block scope: visible only within the block
-// var x = 10; // global scope: visible everywhere in the file
-
-// // a block of code
-// {   
-//     var x = 20; // redefinition
-//     console.log(x); // 20
-// }
-
-// // block scope: visible only within the block
-// var x = 10; // global scope: visible everywhere in the file
-
-// // a block of code
-// {   
-//     x = 20; // redefinition
-//     console.log(x); // 20
-// }
-
-// console.log(x); // 20
-
-// let x = 10; // global scope: visible everywhere in the file
-
-// // let x = 20; // redeclaration is not allowed
-
-// {
-//     let x = 20; // block scope: visible only within the block
-//     console.log(x); // 20
-// }
-
-// console.log(x); // 10
-
-// Scoping: if statement, for loops, functions
-
-// let x = 10; 
-
-// if (true) {
-//     let x = 20; // block scope: visible only within the block
-//     console.log(x); // 20
-// }
-
-// console.log(x); // 10
-
-// for (let i = 1; i <= 5; i++); // block scope: visible only within the block
-// console.log(i); // ReferenceError: i is not defined
-
-// for (var i = 1; i <= 5; i++); // block scope: visible only within the block
-// console.log(i); // 6
-
+// function definition withuot any arguments and without return type
 // function sayHello() {
-//     var x = 10; // function scope: visible only within the function
-//     console.log(x); // 10
+//     console.log("Hello");
 // }
 
+// sayHello(); // function call
 // sayHello();
 
-// console.log(x); // ReferenceError: x is not defined
+// passing value as argument
+// function sayHello(name) {
+//     console.log("Hello", name);
+// }
 
-var x = 10; // global scope: visible everywhere in the file
+// // sayHello("Krish");
+// sayHello("Sathish");
 
-function sayHello() {
-    console.log(x); // 10
-}
+// the function with multiple arguments
+// function add(x, y) {
+//     return x + y;
+// }
 
-sayHello();
+// console.log(add(5, 6));
 
-console.log(x); // 10
+/*
+    1. named functions
+    2. anonymous functions
+    3. arrow functions
+    4. IIFE (Immediately Invoked Function Expression)
+*/
+
+// named functions
+// function add(x, y) {
+//     return x + y;
+// }
+
+// console.log(add(5, 6));
+
+// anonymous functions
+// let add = function (x, y) {
+//     return x + y;
+// }
+
+// console.log(add(5, 6));
+
+// arrow functions
+// let add = (x, y) => {
+//     return x + y;
+// }
+
+// console.log(add(5, 6));
+
+// let add = (x, y) => x + y;
+
+// console.log(add(5, 6));
+
+// IIFE: Immediately Invoked Function Expression
+// console.log(((x, y) => {
+//     return x + y;
+// })(5, 6));
+
+// ((x, y) => {
+//     console.log(x + y);
+// })(5, 6)
+
+// console.log((function (x, y) {
+//     return x + y;
+// })(5, 6));
+
+// (function (x, y) {
+//     console.log(x + y);
+// })(5, 6)
+
+let sum = (function (x, y) {
+    return x + y;
+})(5, 6);
+
+console.log(sum);
