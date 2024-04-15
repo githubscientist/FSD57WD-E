@@ -41,7 +41,10 @@ rest parameter:
 
 - Destructuring is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
 
-[] property shorthand
+[x] property shorthand
+
+- Property shorthand is a feature of ES6 that allows you to create object literals without repeating yourself.
+
 [] Class in Javascript
 [] use of this keyword(lexical scoping)
 [] module import & export
@@ -51,7 +54,3 @@ rest parameter:
 [ES6 Documentation](https://github.com/lukehoban/es6features#readme)
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
-
-```
-
-```
