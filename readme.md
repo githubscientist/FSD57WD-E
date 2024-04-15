@@ -45,9 +45,17 @@ rest parameter:
 
 - Property shorthand is a feature of ES6 that allows you to create object literals without repeating yourself.
 
-[] Class in Javascript
-[] use of this keyword(lexical scoping)
-[] module import & export
+[x] Class in Javascript
+
+- Classes are a template or blueprint for creating objects.
+- Classes are collection of objects.
+
+[x] use of this keyword(lexical scoping)
+
+- The this keyword refers to the object it belongs to.
+- points to the current object.
+
+[x] module import & export
 
 **Pre-read:**
 
